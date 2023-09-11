@@ -1,0 +1,39 @@
+/* Default styles for the user messages */
+.user-messages {
+  display: flex;
+  flex-direction: column;
+  /* Styles for individual messages */
+  &__message {
+    margin-bottom: 8px; /* Added margin between messages */
+    &--sent {
+      text-align: right;
+    }
+    
+    /* Styles for the sender's name */
+    &-sender {
+      display: block;
+      font-weight: bold;
+      color: black;
+      &--sent {
+        color: blue;
+      }
+    }
+    
+    /* Styles for the message text */
+    &-text {
+      background-color: #e5e5ea;
+      padding: 8px;
+      border-radius: 8px;
+      display: inline-block;
+      max-width: 70%;
+      word-wrap: break-word; /* Added to wrap long messages */
+      &--sent {
+        background-color: #0078d4;
+        color: white;
+      }
+    }    
+    
+  }
+
+}
+

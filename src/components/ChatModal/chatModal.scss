@@ -1,0 +1,27 @@
+/* Styles for the ChatModal component */
+.chat-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 24px;
+  padding: 16px;
+
+  /* Styles for the modal title */
+  h2 {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+  }
+
+  /* Styles for the Submit button */
+  button {
+    margin-top: 16px;
+  }
+
+  .group-chat {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}

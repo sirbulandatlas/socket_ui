@@ -1,0 +1,20 @@
+.user-selection__button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  width: 100%;
+  text-transform: none;
+  border-radius: 5px;
+  margin-top: 10px !important;
+  margin-bottom: 8px; 
+}
+
+/* Styles for the active (selected) user */
+.user-selection__button--active {
+  background-color: #e5e5ea !important;
+}
+
+/* Styles for the user's name */
+.user-selection__name {
+  margin-left: 8px;
+}
