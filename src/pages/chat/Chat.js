@@ -67,7 +67,21 @@ function Chat() {
 
     if (list.find((con) => con.id === notificationData.id)) return
 
-    list.push(notificationData);
+    if (notificationData.type === 'one_to_one') {
+      const member = notificationData.members.find(member => member.user_id !== user.id);
+
+      if (member) {
+        list.push({
+          ...notificationData,
+          title: member.username
+        });
+      } else list.push(notificationData);
+
+    } else {
+      list.push(notificationData);
+    }
+
+
 
     setConversations([...list]);
   });
